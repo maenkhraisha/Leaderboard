@@ -4,11 +4,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Leaderboard</title>
 </head>
 
 <body>
-    <h1>Leaderboard</h1>
+    <header>
+        <h1>Leaderboard</h1>
+    </header>
+
+    <section class="recent-scores">
+        <h2>Recent scores</h2>
+        <input class="btn" type="button" value="refresh">
+        <ul class="recent-score">
+
+        </ul>
+    </section>
+
+    <form class="add-your-score">
+        <h2>Add your score</h2>
+        <label for="name"></label>
+        <input id="name" type="text" placeholder="Your name">
+
+        <label for="score"></label>
+        <input id="score" type="text" placeholder="Your score">
+
+        <input class="btn" type="button" value="submit">
+    </form>
+    <script src="index.js"></script>
 </body>
 
 </html>
