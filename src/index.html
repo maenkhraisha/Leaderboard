@@ -9,15 +9,30 @@
 </head>
 
 <body>
-    <header>
+    <header class="header">
         <h1>Leaderboard</h1>
     </header>
 
-    <section class="recent-scores">
-        <h2>Recent scores</h2>
-        <input class="btn" type="button" value="refresh">
-        <ul class="recent-score">
-
+    <section class="recent-container">
+        <h2 class="recent-score-header">Recent scores</h2>
+        <input class="btn refresh" type="button" value="refresh">
+        <ul class="recent-score-list">
+            <li>
+                <p>name:</p>
+                <p>500</p>
+            </li>
+            <li>
+                <p>name:</p>
+                <p>500</p>
+            </li>
+            <li>
+                <p>name:</p>
+                <p>500</p>
+            </li>
+            <li>
+                <p>name:</p>
+                <p>500</p>
+            </li>
         </ul>
     </section>
 
@@ -29,8 +44,9 @@
         <label for="score"></label>
         <input id="score" type="text" placeholder="Your score">
 
-        <input class="btn" type="button" value="submit">
+        <input class="btn submit" type="button" value="submit">
     </form>
+
     <script src="./index.js"></script>
 </body>
 
