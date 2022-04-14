@@ -10,13 +10,19 @@
 - HTML&CSS
 - VScode 
 - JS
+## Technologies
+- webpack
+- JS6 module
 
+## out resource
+    use external API :
+    https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/VYz14K82vE17A0uJo9Rl/scores/
 ## Live Demo 
 
 Go to live demo : 
 https://maenkhraisha.github.io/Leaderboard/
 
-![portfolio]()
+![portfolio](./src/images/screenshoot.PNG)
 
 ## Getting Started
 
@@ -25,8 +31,16 @@ https://maenkhraisha.github.io/Leaderboard/
 ```
 $ git clone git@github.com:maenkhraisha/Leaderboard.git
 ```
-use npm install
-use npm start
+
+use
+``` 
+npm install 
+```
+
+use 
+```
+npm start
+```
 
 
 ### Prerequisites
