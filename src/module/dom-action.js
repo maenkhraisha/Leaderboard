@@ -2,7 +2,7 @@ const DomUL = document.getElementById('user-list');
 
 const createList = (users) => {
   DomUL.innerHTML = '';
-  for (const user of users) {
+  users.forEach((user) => {
     const DomLi = document.createElement('li');
     const DomName = document.createElement('p');
     const DomScrore = document.createElement('p');
@@ -13,7 +13,7 @@ const createList = (users) => {
     DomLi.appendChild(DomName);
     DomLi.appendChild(DomScrore);
     DomUL.appendChild(DomLi);
-  }
+  });
 };
 
 export default { createList };

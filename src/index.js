@@ -8,14 +8,22 @@ const TextName = document.getElementById('name');
 const TextScore = document.getElementById('score');
 
 BtnRefresh.addEventListener('click', () => {
-	const data = apiFun.getUsers();
-	data.then((resolve) => {
-		domFun.createList(resolve);
-	});
+  apiFun.getUsers()
+    .then((resolve) => {
+      domFun.createList(resolve);
+    });
 });
 
 BtnSubmit.addEventListener('click', () => {
-	apiFun.addUser(TextName.value, TextScore.value);
-	TextName.innerHTML = '';
-	TextScore.innerHTML = '';
+  const data = apiFun.addUser(TextName.value, TextScore.value);
+  data.then(() => {
+    TextName.value = '';
+    TextScore.value = '';
+  }).then(() => {
+    BtnRefresh.click();
+  });
+});
+
+window.addEventListener('load', () => {
+  BtnRefresh.click();
 });
