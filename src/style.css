@@ -30,11 +30,11 @@ p {
   float: right;
 }
 
-.refresh:hover {
+.btn:hover {
   color: lightblue;
 }
 
-.refresh:active {
+.btn:active {
   transform: scale(0.9);
 }
 

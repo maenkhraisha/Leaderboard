@@ -16,27 +16,12 @@
     <section class="recent-container">
         <h2 class="recent-score-header">Recent scores</h2>
         <input id="refresh" class="btn refresh" type="button" value="refresh">
-        <ul class="recent-score-list">
-            <li>
-                <p>name:</p>
-                <p>500</p>
-            </li>
-            <li>
-                <p>name:</p>
-                <p>500</p>
-            </li>
-            <li>
-                <p>name:</p>
-                <p>500</p>
-            </li>
-            <li>
-                <p>name:</p>
-                <p>500</p>
-            </li>
+        <ul id="user-list" class="recent-score-list">
+
         </ul>
     </section>
 
-    <form class="add-your-score">
+    <section class="add-your-score">
         <h2>Add your score</h2>
         <label for="name"></label>
         <input id="name" type="text" placeholder="Your name">
@@ -44,8 +29,8 @@
         <label for="score"></label>
         <input id="score" type="text" placeholder="Your score">
 
-        <input class="btn submit" type="button" value="submit">
-    </form>
+        <input id="submit" class="btn submit" type="button" value="submit">
+    </section>
 
     <script src="./index.js"></script>
 </body>
