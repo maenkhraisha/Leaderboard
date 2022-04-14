@@ -14,16 +14,19 @@ p {
   padding: 0.25rem;
   background-color: white;
   border: 1px solid black;
+  font-size: 1rem;
 }
 
 .header {
   margin: 5%;
+  font-size: 2rem;
 }
 
 .recent-score-header {
-  margin: 0 0 2% 5%;
+  margin: 0 0 2% 0;
   display: inline-block;
   width: fit-content;
+  font-size: 2rem;
 }
 
 .refresh {
@@ -31,7 +34,7 @@ p {
 }
 
 .btn:hover {
-  color: lightblue;
+  color: chocolate;
 }
 
 .btn:active {
@@ -39,20 +42,22 @@ p {
 }
 
 .recent-container {
+  background-color: chocolate;
+  border-radius: 1rem;
   width: 45%;
-  margin-left: 2%;
+  padding: 2rem;
+  margin: 0 0 5% 5%;
   float: left;
 }
 
 .recent-score-list {
-  margin: 5% 0 0 5%;
   box-shadow: 1px 1px #000;
   list-style: none;
   border: 1px solid black;
 }
 
-.recent-score-list > li,
-.recent-score-list > li > p {
+.recent-score-list>li,
+.recent-score-list>li>p {
   padding: 1%;
 }
 
@@ -78,4 +83,10 @@ input {
 
 .submit {
   align-self: flex-end;
+}
+
+.add-your-score {
+  background-color: chocolate;
+  border-radius: 1rem;
+  padding: 2rem;
 }
