@@ -30,6 +30,14 @@ p {
   float: right;
 }
 
+.btn:hover {
+  color: lightblue;
+}
+
+.btn:active {
+  transform: scale(0.9);
+}
+
 .recent-container {
   width: 45%;
   margin-left: 2%;
