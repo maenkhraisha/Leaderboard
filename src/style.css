@@ -56,8 +56,8 @@ p {
   border: 1px solid black;
 }
 
-.recent-score-list>li,
-.recent-score-list>li>p {
+.recent-score-list > li,
+.recent-score-list > li > p {
   padding: 1%;
 }
 
@@ -71,6 +71,9 @@ li:nth-child(odd) {
   width: 45%;
   margin-right: 2%;
   float: right;
+  background-color: chocolate;
+  border-radius: 1rem;
+  padding: 2rem;
 }
 
 input {
@@ -83,10 +86,4 @@ input {
 
 .submit {
   align-self: flex-end;
-}
-
-.add-your-score {
-  background-color: chocolate;
-  border-radius: 1rem;
-  padding: 2rem;
 }
